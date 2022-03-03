@@ -9,6 +9,7 @@ import sys
 def solve(n):
     dp_table = [0] * (n+1)
 
+    # dp_table[1][i]: 1의 자리수가 i인 수의 개수
     dp_table[1] = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 
     if n >= 2:
